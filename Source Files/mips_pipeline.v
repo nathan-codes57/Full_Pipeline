@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module full_pipeline (
+module mips_pipeline (
 
 input wire clk, rst,
 input wire [31:0] Instruction,
