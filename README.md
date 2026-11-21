@@ -32,9 +32,9 @@ verified.
 | [`mips_pipeline_tb.v`](LINK_TO_TESTBENCH_CODE) | Source code for mips pipeline testbench |
 
 ### Implementation Notes
-- [Explain one important design decision.]
-- [Identify any parameterization, reusable module, or interface convention.]
-- [Document any deliberate simplification made for this lab.]
+- 32 bit data bus, 256 memory and instruction addresses
+- All modules are reusable within MIPS pipeline context
+- PC increments by 1 instead of 4
 ## Verification
 ### Verification Strategy
 The design is verified using **[simulation, formal checks, hardware testing, or
