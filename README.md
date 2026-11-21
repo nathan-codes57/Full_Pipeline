@@ -12,24 +12,25 @@ verified.
 ## Requirements
 | Requirement | Description | Verification Method |
 |---|---|---|
-| REQ-01 | [The design shall ...] | [Test case, waveform, calculation, or
-inspection] |
-| REQ-02 | [The design shall ...] | [Test case, waveform, calculation, or
-inspection] |
-| REQ-03 | [The design shall ...] | [Test case, waveform, calculation, or
-inspection] |
-## Architecture
-### Timing or Behavioral Summary
-Save diagrams in the repository's `images/` folder. Use relative paths so they
-display on GitHub.
-![Timing Diagram](images/[timing-diagram-filename].png)
+| Instruction Fetch 1 | A full Mips pipeline instruction fetch stage | [Test case, waveform, calculation, orinspection] |
+| Decode 2 | A full Mips pipeline decode stage | [Test case, waveform, calculation, orinspection] |
+| Execute 3 | A full Mips pipeline execute stage | [Test case, waveform, calculation, orinspection] |
+| MemoryWB4 | A full Mips pipeline memory and writeback stage | [Test case, waveform, calculation, orinspection] |
+| mips_pipeline | A full Mips pipeline, bringing all four pipeline modules/stages together into one clean module | [Test case, waveform, calculation, orinspection] |
+
 ## Implementation
 ### Source Code
 | File | Description |
 |---|---|
-| [`[module].v`](LINK_TO_IMPLEMENTATION_CODE) | [Primary implementation module] |
-| [`[component].v`](LINK_TO_COMPONENT_CODE) | [Supporting component] |
-| [`[testbench].v`](LINK_TO_TESTBENCH_CODE) | [Verification testbench] |
+| [`fetch.v`](LINK_TO_IMPLEMENTATION_CODE) | Source code for fetch module |
+| [`Decode.v`](LINK_TO_COMPONENT_CODE) | Source code for decode module |
+| [`EXECUTE.v`](LINK_TO_TESTBENCH_CODE) | Source code for execute module |
+| [`MEMORY.v`](LINK_TO_TESTBENCH_CODE) | Source code for memory module |
+| [`WB.v`](LINK_TO_TESTBENCH_CODE) | Source code for writeback module |
+| [`mips_pipeline.v`](LINK_TO_TESTBENCH_CODE) | Source code for mips pipeline module |
+| [`WB_tb.v`](LINK_TO_TESTBENCH_CODE) | Source code for writeback testbench |
+| [`mips_pipeline_tb.v`](LINK_TO_TESTBENCH_CODE) | Source code for mips pipeline testbench |
+
 ### Implementation Notes
 - [Explain one important design decision.]
 - [Identify any parameterization, reusable module, or interface convention.]
