@@ -38,7 +38,7 @@ wire [31:0] alu_result, rdata2out,
 wire [4:0] five_bit_muxout
 wire MEM_WB_regwrite, MEM_WB_memtoreg
 wire [31:0] read_data, mem_alu_result,
-wire [4:0] mem_write_reg
+wire [4:0] mem_write_reg;
   
 fetch f1(
 .clk(clk), .rst(rst),
