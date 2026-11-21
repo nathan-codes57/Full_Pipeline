@@ -34,7 +34,6 @@ output wire [31:0] EX_MEM_NPC,
 output wire zero,
 output wire [31:0] alu_result, rdata2out,
 output wire [4:0] five_bit_muxout
-  output wire MEM_PCSrc,
   output wire MEM_WB_regwrite, MEM_WB_memtoreg
   output wire [31:0] read_data, mem_alu_result,
   output wire [4:0] mem_write_reg
@@ -89,7 +88,7 @@ Decode d2(
     .zero(zero),
     .alu_result(alu_result), .rdata2out(rdata2out),
     .five_bit_muxout(five_bit_muxout),
-    .MEM_PCSrc(MEM_PCSrc), //from AND gate
+    .ex_mem_pc_src(MEM_PCSrc), //from AND gate
     .MEM_WB_regwrite(MEM_WB_regwrite), .MEM_WB_memtoreg(MEM_WB_memtoreg),
     .read_data(read_data), .mem_alu_result(mem_alu_result),
     .mem_write_reg(mem_write_reg)
