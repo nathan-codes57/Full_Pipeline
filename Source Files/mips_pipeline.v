@@ -3,6 +3,8 @@
 module mips_pipeline (
 
 input wire clk, rst,
+);
+
 input wire [31:0] Instruction,
 input wire [4:0] WriteReg,
 input wire [31:0] WriteData,
@@ -22,9 +24,8 @@ output wire [4:0] Instr_1511_out
 input wire ex_mem_pc_src,
 input wire [31:0] ex_mem_pc,
 output wire [31:0] if_id_instr,
-if_id_npc
-);
-
+if_id_npc;
+  
 fetch f1(
 .clk(clk), .rst(rst),
 .ex_mem_pc_src(ex_mem_pc_src),
