@@ -12,11 +12,11 @@ verified.
 ## Requirements
 | Requirement | Description | Verification Method |
 |---|---|---|
-| Instruction Fetch 1 | A full Mips pipeline instruction fetch stage | [Test case, waveform, calculation, orinspection] |
-| Decode 2 | A full Mips pipeline decode stage | [Test case, waveform, calculation, orinspection] |
-| Execute 3 | A full Mips pipeline execute stage | [Test case, waveform, calculation, orinspection] |
-| MemoryWB4 | A full Mips pipeline memory and writeback stage | [Test case, waveform, calculation, orinspection] |
-| mips_pipeline | A full Mips pipeline, bringing all four pipeline modules/stages together into one clean module | [Test case, waveform, calculation, orinspection] |
+| Instruction Fetch 1 | A full Mips pipeline instruction fetch stage | Test case, waveform, inspection |
+| Decode 2 | A full Mips pipeline decode stage | Test case, waveform, inspection |
+| Execute 3 | A full Mips pipeline execute stage | Test case, waveform, inspection |
+| MemoryWB4 | A full Mips pipeline memory and writeback stage | Test case, waveform, inspection |
+| mips_pipeline | A full Mips pipeline, bringing all four pipeline modules/stages together into one clean module | Test case, waveform, inspection |
 
 ## Implementation
 ### Source Code
