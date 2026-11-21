@@ -49,7 +49,7 @@ fetch f1(
 
 Decode d2(
 .clk(clk), .rst(rst),
-.Instruction(Instruction),
+.if_id_instr(Instruction),
 .WriteReg(WriteReg),
 .WriteData(WriteData),
 .RegWrite(RegWrite),
