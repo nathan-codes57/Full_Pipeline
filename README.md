@@ -5,11 +5,10 @@ Keep this README focused on what the design does, how it is used, and how it was
 verified.
 -->
 ## Design Scope and Assumptions
-- **In scope:** [What this lab implements]
-- **Out of scope:** [What this lab intentionally does not implement]
-- **Assumptions:** [Clock frequency, reset behavior, data width, memory model, or
-other assumptions]
-- **Limitations:** [Known limitations or simplified behaviors]
+- **In scope:** This lab implements the full MIPS pipeline in Verilog
+- **Out of scope:** Optimization
+- **Assumptions:** All previous pipeline states are implemented
+- **Limitations:** Limited to 32 bit bus and 256 addresses in data memory.
 ## Requirements
 | Requirement | Description | Verification Method |
 |---|---|---|
@@ -56,10 +55,10 @@ The testbench source is available [*here*](LINK_TO_TESTBENCH_CODE).
 | TC-03 — [Name] | [Expected behavior] | [Observed behavior] | Pass / Fail |
 ## Reproduction Instructions
 ### Tools and Versions
-- **Simulator / synthesis tool:** [Name and version]
-- **Language / standard:** [Verilog/SystemVerilog version]
-- **Operating system:** [macOS, Windows, Linux, or other]
-- **Additional dependencies:** [List any required tools or libraries]
+- **Simulator / synthesis tool:** Vivado 2025.1
+- **Language / standard:** Verilog-2005
+- **Operating system:** Windows
+- **Additional dependencies:** Testbench & README templates from Professor Quon
 ### Build and Run
 ```bash
 # Replace these commands with the commands required for this lab.
