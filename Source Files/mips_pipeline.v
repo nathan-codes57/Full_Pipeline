@@ -37,8 +37,7 @@ wire zero,
 wire [31:0] alu_result, rdata2out,
 wire [4:0] five_bit_muxout
 wire MEM_WB_regwrite, MEM_WB_memtoreg
-wire [31:0] read_data, mem_alu_result,
-wire [4:0] mem_write_reg;
+wire [31:0] read_data, mem_alu_result;
   
 fetch f1(
 .clk(clk), .rst(rst),
@@ -92,7 +91,7 @@ Decode d2(
     .ex_mem_pc_src(MEM_PCSrc), //from AND gate
     .MEM_WB_regwrite(MEM_WB_regwrite), .MEM_WB_memtoreg(MEM_WB_memtoreg),
     .read_data(read_data), .mem_alu_result(mem_alu_result),
-    .mem_write_reg(mem_write_reg)
+    .mem_write_reg(WriteReg)
   );
 
 endmodule
